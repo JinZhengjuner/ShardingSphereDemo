@@ -49,9 +49,9 @@ public class ShardingJDBCTest {
     public void queryCourse(){
         //select * from course
         QueryWrapper<Course> wrapper = new QueryWrapper<>();
-        wrapper.orderByDesc("userId");
+//        wrapper.orderByDesc("cId");
 //        wrapper.eq("cid",553684818806706177L);
-//        wrapper.in()
+        wrapper.between("cid", 929700063574233089L, 929700066980007937L);
         List<Course> courses = courseMapper.selectList(wrapper);
         courses.forEach(course -> System.out.println(course));
     }
@@ -60,7 +60,7 @@ public class ShardingJDBCTest {
     public void queryOrderRange(){
         //select * from course
         QueryWrapper<Course> wrapper = new QueryWrapper<>();
-        wrapper.between("cid",553684818806706177L,553684819184193537L);
+        wrapper.between("cid",929700063574233089L,929700066980007937L);
 //        wrapper.in()
         List<Course> courses = courseMapper.selectList(wrapper);
         courses.forEach(course -> System.out.println(course));
@@ -69,7 +69,7 @@ public class ShardingJDBCTest {
     @Test
     public void queryCourseComplex(){
         QueryWrapper<Course> wrapper = new QueryWrapper<>();
-        wrapper.between("cid",553684818806706177L,553684819184193537L);
+        wrapper.between("cid",929700063574233089L,929700066980007937L);
         wrapper.eq("user_id",1009L);
 //        wrapper.in()
         List<Course> courses = courseMapper.selectList(wrapper);
