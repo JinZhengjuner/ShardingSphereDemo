@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9a03de0-dc9b-461a-a137-fb0a0b6ad576" name="Default Changelist" comment="shardingsphere只支持一个分片键">
+    <list default="true" id="c9a03de0-dc9b-461a-a137-fb0a0b6ad576" name="Default Changelist" comment="complex分片策略">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <command value="mvn clean package -Dmaven.test.skip=true" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShardingJDBCTest.queryCourseComplex">
+  <component name="RunManager" selected="JUnit.ShardingJDBCTest.queryCourseByHint">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -196,8 +198,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShardingJDBCTest.queryCourseComplex" />
         <item itemvalue="JUnit.ShardingJDBCTest.queryCourseByHint" />
+        <item itemvalue="JUnit.ShardingJDBCTest.queryCourseComplex" />
         <item itemvalue="JUnit.ShardingJDBCTest.queryCourse" />
         <item itemvalue="JUnit.ShardingJDBCTest.addCourse" />
         <item itemvalue="JUnit.ShardingJDBCTest.queryDictByMS" />
@@ -219,7 +221,7 @@
       <workItem from="1609810386357" duration="15574000" />
       <workItem from="1609911056996" duration="2350000" />
       <workItem from="1609931804490" duration="11048000" />
-      <workItem from="1699585178813" duration="5075000" />
+      <workItem from="1699585178813" duration="5967000" />
     </task>
     <task id="LOCAL-00001" summary="分表、分库">
       <created>1699588343605</created>
@@ -235,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699596353129</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="complex分片策略">
+      <created>1699597026415</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699597026415</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +253,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="分表、分库" />
     <MESSAGE value="shardingsphere只支持一个分片键" />
-    <option name="LAST_COMMIT_MESSAGE" value="shardingsphere只支持一个分片键" />
+    <MESSAGE value="complex分片策略" />
+    <option name="LAST_COMMIT_MESSAGE" value="complex分片策略" />
   </component>
 </project>
