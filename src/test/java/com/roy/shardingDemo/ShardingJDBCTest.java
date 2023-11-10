@@ -16,6 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author ：楼兰
@@ -42,6 +43,12 @@ public class ShardingJDBCTest {
             c.setUserId(Long.valueOf(""+(1000+i)));
             c.setCstatus("1");
             courseMapper.insert(c);
+
+
+            Dict dict = new Dict();
+            dict.setUstatus("状态"+ i);
+            dict.setUvalue("value" + i);
+            dictMapper.insert(dict);
         }
     }
 
@@ -49,10 +56,11 @@ public class ShardingJDBCTest {
     public void queryCourse(){
         //select * from course
         QueryWrapper<Course> wrapper = new QueryWrapper<>();
-//        wrapper.orderByDesc("cId");
+//        wrapper.orderByDesc("");
+        wrapper.groupBy("cid");
 //        wrapper.eq("cid",553684818806706177L);
-        wrapper.between("cid", 929700063574233089L, 929700066980007937L);
-        List<Course> courses = courseMapper.selectList(wrapper);
+//        wrapper.between("cid", 929700063574233089L, 929700066980007937L);
+        List<Map<String, Object>> courses = courseMapper.selectMaps(wrapper);
         courses.forEach(course -> System.out.println(course));
     }
 
@@ -97,13 +105,13 @@ public class ShardingJDBCTest {
         d2.setUvalue("不正常");
         dictMapper.insert(d2);
 
-        for(int i = 0 ; i < 10 ; i ++){
-            User user = new User();
-            user.setUsername("user No "+i);
-            user.setUstatus(""+(i%2));
-            user.setUage(i*10);
-            userMapper.insert(user);
-        }
+//        for(int i = 0 ; i < 10 ; i ++){
+//            User user = new User();
+//            user.setUsername("user No "+i);
+//            user.setUstatus(""+(i%2));
+//            user.setUage(i*10);
+//            userMapper.insert(user);
+//        }
     }
 
     @Test

@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9a03de0-dc9b-461a-a137-fb0a0b6ad576" name="Default Changelist" comment="complex分片策略">
+    <list default="true" id="c9a03de0-dc9b-461a-a137-fb0a0b6ad576" name="Default Changelist" comment="强制分片">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application02.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application01.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/roy/shardingDemo/ShardingJDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/roy/shardingDemo/ShardingJDBCTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/roy/shardingDemo/ShardingJDBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/roy/shardingDemo/ShardingJDBCTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +69,7 @@
       <command value="mvn clean package -Dmaven.test.skip=true" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShardingJDBCTest.queryCourseByHint">
+  <component name="RunManager" selected="JUnit.ShardingJDBCTest.queryCourse">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -90,6 +94,23 @@
       <option name="PACKAGE_NAME" value="com.roy.shardingDemo" />
       <option name="MAIN_CLASS_NAME" value="com.roy.shardingDemo.ShardingJDBCTest" />
       <option name="METHOD_NAME" value="addCourse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingJDBCTest.addDict" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShardingSphereDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roy.shardingDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roy.shardingDemo" />
+      <option name="MAIN_CLASS_NAME" value="com.roy.shardingDemo.ShardingJDBCTest" />
+      <option name="METHOD_NAME" value="addDict" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -130,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShardingJDBCTest.queryCourseComplex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShardingJDBCTest.queryUserStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ShardingSphereDemo" />
       <extension name="coverage">
         <pattern>
@@ -140,24 +161,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.roy.shardingDemo" />
       <option name="MAIN_CLASS_NAME" value="com.roy.shardingDemo.ShardingJDBCTest" />
-      <option name="METHOD_NAME" value="queryCourseComplex" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShardingJDBCTest.queryDictByMS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ShardingSphereDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roy.shardingDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roy.shardingDemo" />
-      <option name="MAIN_CLASS_NAME" value="com.roy.shardingDemo.ShardingJDBCTest" />
-      <option name="METHOD_NAME" value="queryDictByMS" />
+      <option name="METHOD_NAME" value="queryUserStatus" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -198,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShardingJDBCTest.queryCourseByHint" />
-        <item itemvalue="JUnit.ShardingJDBCTest.queryCourseComplex" />
         <item itemvalue="JUnit.ShardingJDBCTest.queryCourse" />
         <item itemvalue="JUnit.ShardingJDBCTest.addCourse" />
-        <item itemvalue="JUnit.ShardingJDBCTest.queryDictByMS" />
+        <item itemvalue="JUnit.ShardingJDBCTest.queryUserStatus" />
+        <item itemvalue="JUnit.ShardingJDBCTest.addDict" />
+        <item itemvalue="JUnit.ShardingJDBCTest.queryCourseByHint" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +225,7 @@
       <workItem from="1609810386357" duration="15574000" />
       <workItem from="1609911056996" duration="2350000" />
       <workItem from="1609931804490" duration="11048000" />
-      <workItem from="1699585178813" duration="5967000" />
+      <workItem from="1699585178813" duration="11105000" />
     </task>
     <task id="LOCAL-00001" summary="分表、分库">
       <created>1699588343605</created>
@@ -244,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699597026415</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="强制分片">
+      <created>1699597832019</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699597832019</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +265,7 @@
     <MESSAGE value="分表、分库" />
     <MESSAGE value="shardingsphere只支持一个分片键" />
     <MESSAGE value="complex分片策略" />
-    <option name="LAST_COMMIT_MESSAGE" value="complex分片策略" />
+    <MESSAGE value="强制分片" />
+    <option name="LAST_COMMIT_MESSAGE" value="强制分片" />
   </component>
 </project>
