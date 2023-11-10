@@ -1,0 +1,3 @@
+com\roy\shardingDemo\ShardingJDBCApplication.class
+com\roy\shardingDemo\entity\Course.class
+com\roy\shardingDemo\mapper\CourseMapper.class
