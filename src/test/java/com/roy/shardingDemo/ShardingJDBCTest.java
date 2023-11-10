@@ -49,8 +49,8 @@ public class ShardingJDBCTest {
     public void queryCourse(){
         //select * from course
         QueryWrapper<Course> wrapper = new QueryWrapper<>();
-        wrapper.orderByDesc("cid");
-        wrapper.eq("cid",553684818806706177L);
+        wrapper.orderByDesc("userId");
+//        wrapper.eq("cid",553684818806706177L);
 //        wrapper.in()
         List<Course> courses = courseMapper.selectList(wrapper);
         courses.forEach(course -> System.out.println(course));
