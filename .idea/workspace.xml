@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9a03de0-dc9b-461a-a137-fb0a0b6ad576" name="Default Changelist" comment="强制分片">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application02.properties" afterDir="false" />
+    <list default="true" id="c9a03de0-dc9b-461a-a137-fb0a0b6ad576" name="Default Changelist" comment="分表">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application01.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/roy/shardingDemo/ShardingJDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/roy/shardingDemo/ShardingJDBCTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/roy/shardingDemo/ShardingJDBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/roy/shardingDemo/ShardingJDBCTest.class" afterDir="false" />
@@ -49,6 +47,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "2ee1840dc9566c182222e84cd84c02bc",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -225,7 +224,8 @@
       <workItem from="1609810386357" duration="15574000" />
       <workItem from="1609911056996" duration="2350000" />
       <workItem from="1609931804490" duration="11048000" />
-      <workItem from="1699585178813" duration="11105000" />
+      <workItem from="1699585178813" duration="14100000" />
+      <workItem from="1699840044214" duration="2950000" />
     </task>
     <task id="LOCAL-00001" summary="分表、分库">
       <created>1699588343605</created>
@@ -255,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699597832019</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="分表">
+      <created>1699608338186</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699608338186</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +273,7 @@
     <MESSAGE value="shardingsphere只支持一个分片键" />
     <MESSAGE value="complex分片策略" />
     <MESSAGE value="强制分片" />
-    <option name="LAST_COMMIT_MESSAGE" value="强制分片" />
+    <MESSAGE value="分表" />
+    <option name="LAST_COMMIT_MESSAGE" value="分表" />
   </component>
 </project>

@@ -45,10 +45,10 @@ public class ShardingJDBCTest {
             courseMapper.insert(c);
 
 
-            Dict dict = new Dict();
-            dict.setUstatus("状态"+ i);
-            dict.setUvalue("value" + i);
-            dictMapper.insert(dict);
+//            Dict dict = new Dict();
+//            dict.setUstatus("状态"+ i);
+//            dict.setUvalue("value" + i);
+//            dictMapper.insert(dict);
         }
     }
 
@@ -56,11 +56,10 @@ public class ShardingJDBCTest {
     public void queryCourse(){
         //select * from course
         QueryWrapper<Course> wrapper = new QueryWrapper<>();
-//        wrapper.orderByDesc("");
-        wrapper.groupBy("cid");
-//        wrapper.eq("cid",553684818806706177L);
-//        wrapper.between("cid", 929700063574233089L, 929700066980007937L);
-        List<Map<String, Object>> courses = courseMapper.selectMaps(wrapper);
+        wrapper.orderByAsc("cid");
+//        wrapper.eq("cid",929794594709704705L);
+        wrapper.between("cid", 929794594709704705L, 929794594709704705L);
+        List<Course> courses = courseMapper.selectList(wrapper);
         courses.forEach(course -> System.out.println(course));
     }
 
