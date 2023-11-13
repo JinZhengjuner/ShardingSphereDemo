@@ -23,10 +23,8 @@ public class MyComplexDSShardingAlgorithm implements ComplexKeysShardingAlgorith
     public Collection<String> doSharding(Collection<String> availableTargetNames, ComplexKeysShardingValue<Long> shardingValue) {
         Range<Long> cidRange = shardingValue.getColumnNameAndRangeValuesMap().get("cid");
         Collection<Long> userIdCol = shardingValue.getColumnNameAndShardingValuesMap().get("user_id");
-
         Long upperVal = cidRange.upperEndpoint();
         Long lowerVal = cidRange.lowerEndpoint();
-
         List<String> res = new ArrayList<>();
 
         for(Long userId: userIdCol){
